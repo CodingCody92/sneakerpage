@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Kickz&trade; &mid; Sneakers. Life. Culture. </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="logo.jpg">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.jpg" alt="..." class="logo"> </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Jordan Releases</a></li>
+                <li><a href="#">Sneaker Releases</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>A Difference You <br> Can Feel In Your <span>Sole.</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quibusdam numquam? Eligendi blanditiis
+                    suscipit nisi nostrum, non consequatur accusantium eaque ab nobis, pariatur, officia sequi obcaecati
+                    repellendus placeat harum unde?
+                    Eaque accusamus similique tempore, doloremque totam, reprehenderit possimus in, repudiandae
+                    laboriosam explicabo modi voluptatem? Soluta, sequi ratione? Officia tempore deserunt perspiciatis
+                    iste, eligendi neque tempora aspernatur quae recusandae explicabo! Odit?</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgbox">
+                <img src="benjerry.jpg" alt="..." class="kicks">
+            </div>
+        </div>
+        <ul class="shoes">
+            <li><img src="yeezy.jpg" alt="..." onclick="imgslider('yeezy.jpg');changeCirclecolor('#E06D06')"></li>
+            <li><img src="scott.jpg" alt="..." onclick="imgslider('scott.jpg');changeCirclecolor('#ffafcc')"></li>
+            <li><img src="yellow.jpg" alt="..." onclick="imgslider('yellow.jpg');changeCirclecolor('#f9c74f')"></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgslider(anything) {
+            document.querySelector('.kicks').src = anything;
+        }
+
+        function changeCirclecolor(color) {
+            const circle = document.querySelector('.circle')
+            circle.style.background = color;
+        }
+    </script>
+
+    <footer>Marathon&copy; Web Design</footer>
+</body>
+
+</html>
